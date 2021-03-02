@@ -58,7 +58,7 @@ import AddTask from './components/AddTask'
 
   return (
     <div className="container">
-      <Header OnAdd ={()=> setShowAdding(!ShowAdding) }/>
+      <Header OnAdd ={()=> setShowAdding(!ShowAdding) } ShowAdding={ShowAdding}/>
       { ShowAdding &&
       <AddTask onAdd = {Addtask} />
       }

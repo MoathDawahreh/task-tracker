@@ -8,10 +8,10 @@ const Button = ( props ) => {
 
         <button
         onClick={props.onClick}
-        style={{ backgroundColor: 'purple' }}
+        style={{ backgroundColor: props.color}}
         className='btn'
       >
-        Add
+        {props.text}
       </button>
   
        
