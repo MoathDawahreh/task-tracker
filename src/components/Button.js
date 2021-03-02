@@ -1,18 +1,22 @@
 import propTypes from 'prop-types';
 
-const Button = () => {
+const Button = ( props ) => {
 
 
-    const OnClick= () =>{
-        // console.log("clicked")
-
-    }
+     
     return (
-        <button
 
-        className = 'btn'
-        style ={{backgroundColor:'purple'}}
-        onClick ={OnClick}> Add </button>
+        <button
+        onClick={props.onClick}
+        style={{ backgroundColor: 'purple' }}
+        className='btn'
+      >
+        Add
+      </button>
+  
+       
+
+      
 
     )
 }
